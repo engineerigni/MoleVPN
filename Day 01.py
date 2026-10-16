@@ -1,16 +1,16 @@
 #code 1 warm up logic for obfuscating ports
+import socket
 def reverse_number(n):
     reversed_num = 0
-    while( num != 0):
-         digit = num % 10
-          reversed_num = reversed_num * 10 + digit
-          num = num // 10
+    while n != 0:
+         digit = n % 10
+         reversed_num = reversed_num * 10 + digit
+         n = n // 10
       return reversed_num 
 num = 8080
 print(f"orignal: {num} -> Reversed: {reversed_number(num)}")
 
 # code2 to get my IP Address_get system IP
-import socket
 hostname = socket.gethostname()
 my_ip = socket.gethostbyname(hostname)
 print(f"My Hostname: {hostname}")
